@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eee;
+}
+
+.navbar {
+  background: #8c8585;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/* Atas */
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;  /* bikin bloknya di tengah layar */
+}
+
+.group-img {
+  width: 320px;   /* sebelumnya 250px */
+  border-radius: 10px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;   /* ini yang bikin ke tengah */
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+/* Box */
+.desc-box {
+  background: #8c8585;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px auto;   /* ini bikin ke tengah */
+  max-width: 700px;    /* biar ga full */
+  color: black;
+}
+
+.desc-box p,
+.desc-box li {
+  line-height: 1.6;
+}
+
+.desc-box ul {
+  margin-top: 10px;
+}
+
+.button-box {
+  background: #8c8585;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+}
+
+.button-box button {
+  background: #6e4b4b;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Bungkus biar sama lebar */
+.content-box {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* Kotak abu */
+.desc-box {
+  background: #8c8585;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto 10px; /* atas 20, bawah 10 */
+}
+
+.button-box {
+  background: #8c8585;
+  max-width: 700px;
+  margin: 10px auto 20px; /* atas 10, bawah 20 */
+  padding: 15px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  background: #8c8585;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Button */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background: #8c8585;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;        /* abu samar */
+}
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+  }
+
+  .card {
+    flex-direction: column; /* gambar di atas, teks di bawah */
+    align-items: flex-start;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
